@@ -8,6 +8,7 @@ namespace ControlPermissions
         User = 1,
         Operator = 2,
         SuperUser = 4,
-        Administrator = 8
+        Administrator = 8,
+        All = 15
     }
 }

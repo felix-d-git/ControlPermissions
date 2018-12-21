@@ -25,3 +25,19 @@ public partial class App : Application, IPermissionControlApplication
 		permissions:ControlPermissions.NoPermissionBehaviour="Disabled">
 </Button>
 ````
+
+User:
+
+<img src="./img/User.png" />
+
+Operator:
+
+<img src="./img/Operator.png" />
+
+SuperUser:
+
+<img src="./img/SuperUser.png" />
+
+Administrator:
+
+<img src="./img/Administrator.png" />

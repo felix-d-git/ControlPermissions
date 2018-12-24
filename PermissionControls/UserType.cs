@@ -6,8 +6,8 @@ namespace ControlPermissions
     public enum UserType
     {
         User = 1,
-        Operator = 2,
-        SuperUser = 4,
+        SuperUser = 2,
+        Operator = 4,
         Administrator = 8,
         All = 15
     }

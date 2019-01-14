@@ -47,12 +47,21 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NoPermissionBehaviour.cs" />
+    <Compile Include="Behaviors\ChangeBackgroundColorBehaviour.cs" />
+    <Compile Include="Behaviors\CustomBehavior.cs" />
+    <Compile Include="Behaviors\DefaultBehavior.cs" />
+    <Compile Include="Behaviors\IPermissionControlBehavior.cs" />
+    <Compile Include="Behaviors\SetTooltipBehavior.cs" />
+    <Compile Include="ControlPermissionHelper.cs" />
+    <Compile Include="lang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lang.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ControlPermissions.cs" />
-    <Compile Include="IPermissionControlApplication.cs" />
-    <Compile Include="UserType.cs" />
+    <Compile Include="AccessLevel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -66,6 +75,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="lang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>lang.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
